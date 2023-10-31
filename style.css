@@ -8,10 +8,12 @@
 body
 {
     background: #17262b;
+    
 }
 html
 {
     font-size: 16px;
+    
 }
 p
 {
@@ -588,4 +590,91 @@ header
   {
     margin-top: 50px;
   }
+
+}
+
+@media only screen and (max-width: 700px)
+{
+   .my-services-sectiondivider , .my-work-sectiondivider
+   {
+       flex-direction: column;
+
+   }
+   .my-services-section
+   {
+    width: 100%;
+    margin-bottom: 50px;
+   }
+   .myservice-second-div 
+   {
+    margin-top: 0px;
+    flex-direction: column;
+   }
+   .my-work-section
+   {
+    width: 100%;
+    margin-bottom: 50px;
+   }
+   .my-services
+   {
+    width: 100%;
+   }
+   
+}
+
+@media only screen and (max-width: 600px)
+{
+    .imgholder img 
+    {
+        width: 100%;
+        height: auto;
+    }
+    h1 
+    {
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    .about-me-img img 
+    {
+        width: 100%;
+        height: auto;
+    }
+    .footer-mini-box-holder 
+    {
+        flex-direction: column;
+    }
+    .footer-mini-box 
+    {
+        margin: 20px 0px;
+    }
+    .start-date-end-date 
+    {
+        display: none;
+    }
+    .my-designation, .i-am-since , .my-company-name, .full-or-part ,.my-company-location
+    {
+        font-size: 0.8rem;
+    }
+    .work-experience
+    {
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 600px)
+{
+    h1 
+    {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    p 
+    {
+        font-size: 0.8rem;
+    }
+    .hello , .jobdesignation
+    {
+        font-size: 1.2rem;
+    }
 }
