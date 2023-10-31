@@ -659,10 +659,14 @@ header
     {
         padding: 0px;
     }
+    .social-media-icon-holder
+    {
+        display: none;
+    } 
 
 }
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 400px)
 {
     h1 
     {
