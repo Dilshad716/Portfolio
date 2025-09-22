@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity Game Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .skill-icon {
+            transition: all 0.3s ease;
+        }
+        .skill-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <i data-feather="cpu" class="h-8 w-8 text-indigo-600"></i>
+                            <span class="font-semibold text-gray-900 text-lg ml-2">MD Dilshad</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="py-4 px-2 text-indigo-600 border-b-4 border-indigo-600 font-semibold">Home</a>
+                    <a href="#projects" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Projects</a>
+                    <a href="#skills" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Skills</a>
+                    <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">About</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="h-6 w-6 text-gray-500"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <a href="#home" class="block py-2 px-4 text-sm hover:bg-indigo-50 text-indigo-600">Home</a>
+                <a href="#projects" class="block py-2 px-4 text-sm hover:bg-indigo-50 text-gray-500 hover:text-indigo-600">Projects</a>
+                <a href="#skills" class="block py-2 px-4 text-sm hover:bg-indigo-50 text-gray-500 hover:text-indigo-600">Skills</a>
+                <a href="#about" class="block py-2 px-4 text-sm hover:bg-indigo-50 text-gray-500 hover:text-indigo-600">About</a>
+                <a href="#contact" class="block py-2 px-4 text-sm hover:bg-indigo-50 text-gray-500 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm MD Dilshad</h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-4">Unity Game Developer</h2>
+                    <p class="text-xl mb-8">Creating immersive gaming experiences with Unity and C#</p>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">View My Work</a>
+                        <a href="#contact" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <img src="http://static.photos/technology/640x360/1" alt="Game Development" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">My Game Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/gaming/640x360/1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Adventure Quest</h3>
+                        <p class="text-gray-600 mb-4">A 2D platformer game with puzzle elements built with Unity.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Unity</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">C#</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">2D</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                            View Details <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/gaming/640x360/2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Space Shooter</h3>
+                        <p class="text-gray-600 mb-4">A 3D arcade-style space shooter with power-ups and enemies.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Unity</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">C#</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">3D</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                            View Details <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/gaming/640x360/3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Puzzle Master</h3>
+                        <p class="text-gray-600 mb-4">A mobile puzzle game with innovative mechanics and level design.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Unity</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">C#</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Mobile</span>
+                        </div>
+                        <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 flex items-center">
+                            View Details <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon bg-white p-6 rounded-full shadow-md mb-3">
+                        <i data-feather="box" class="h-10 w-10 text-indigo-600"></i>
+                    </div>
+                    <span class="font-medium">Unity</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon bg-white p-6 rounded-full shadow-md mb-3">
+                        <i data-feather="code" class="h-10 w-10 text-indigo-600"></i>
+                    </div>
+                    <span class="font-medium">C#</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon bg-white p-6 rounded-full shadow-md mb-3">
+                        <i data-feather="layout" class="h-10 w-10 text-indigo-600"></i>
+                    </div>
+                    <span class="font-medium">UI/UX</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-icon bg-white p-6 rounded-full shadow-md mb-3">
+                        <i data-feather="image" class="h-10 w-10 text-indigo-600"></i>
+                    </div>
+                    <span class="font-medium">2D Art</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon bg-white p-6 rounded-full shadow-md mb-3">
+                        <i data-feather="box" class="h-10 w-10 text-indigo-600"></i>
+                    </div>
+                    <span class="font-medium">3D Modeling</span>
+                </div>
+                <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-icon bg-white p-6 rounded-full shadow-md mb-3">
+                        <i data-feather="play" class="h-10 w-10 text-indigo-600"></i>
+                    </div>
+                    <span class="font-medium">Animation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="http://static.photos/people/640x360/1" alt="About Me" class="rounded-full w-64 h-64 object-cover mx-auto shadow-xl">
+                </div>
+                <div class="md:w-2/3 md:pl-16" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                    <p class="text-gray-600 mb-4">
+                        I'm a passionate Unity game developer with a focus on creating engaging and interactive gaming experiences. 
+                        My journey in game development started when I was just a teenager, and I've been hooked ever since.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        I specialize in Unity game development, C# programming, and game design. My goal is to create games that 
+                        not only entertain but also challenge and inspire players. When I'm not coding, you can find me playing 
+                        games (for research, of course!), sketching game concepts, or learning new development techniques.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300 flex items-center">
+                            <i data-feather="download" class="mr-2"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16" data-aos="fade-up">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <p class="text-gray-600 mb-6">Feel free to reach out if you're looking for a game developer, have a question, or just want to connect.</p>
+                    
+                    <div class="flex items-start mb-4">
+                        <i data-feather="mail" class="text-indigo-600 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium">Email</h4>
+                            <p class="text-gray-600">mddilshad715@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start mb-4">
+                        <i data-feather="phone" class="text-indigo-600 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium">Phone</h4>
+                            <p class="text-gray-600">+91 8527329641</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <i data-feather="map-pin" class="text-indigo-600 mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="font-medium">Location</h4>
+                            <p class="text-gray-600">New Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center">
+                        <i data-feather="cpu" class="h-8 w-8 text-indigo-400"></i>
+                        <span class="font-semibold text-xl ml-2">MD Dilshad</span>
+                    </a>
+                    <p class="mt-2 text-gray-400">Creating amazing gaming experiences</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i data-feather="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i data-feather="twitter" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i data-feather="linkedin" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i data-feather="youtube" class="h-6 w-6"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 MD Dilshad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        feather.replace();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            
+            // Change icon based on menu state
+            const menuIcon = mobileMenuButton.querySelector('i');
+            if (isExpanded) {
+                menuIcon.setAttribute('data-feather', 'menu');
+            } else {
+                menuIcon.setAttribute('data-feather', 'x');
+            }
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
