@@ -20,20 +20,24 @@
     <nav class="bg-white shadow-lg fixed w-full z-10">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between">
-                <div class="flex justify-center w-full md:w-auto md:space-x-7">
                     <div>
-                        <a href="index.html" class="flex items-center justify-center py-4 px-2">
+                        <a href="../index.html" class="flex items-center justify-center py-4 px-2">
                             <i data-feather="cpu" class="h-8 w-8 text-indigo-600"></i>
                             <span class="font-semibold text-gray-900 text-lg ml-2">MD Dilshad</span>
                         </a>
                     </div>
+                 <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i data-feather="menu" class="w-6 h-6 text-gray-700"></i>
+                    </button>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html#home" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Home</a>
-                    <a href="index.html#projects" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Projects</a>
-                    <a href="index.html#skills" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Skills</a>
-                    <a href="index.html#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">About</a>
-                    <a href="index.html#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Contact</a>
+                    <a href="../index.html#home" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Home</a>
+                    <a href="../index.html#projects" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Projects</a>
+                    <a href="../index.html#skills" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Skills</a>
+                    <a href="../index.html#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">About</a>
+                    <a href="../index.html#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Contact</a>
                 </div>
             </div>
         </div>
@@ -46,11 +50,13 @@
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Pixel Rush</h1>
                 <p class="text-xl mb-8">A fast-paced 2D tile-dash prototype with traps, particle effects, and dynamic visuals</p>
                 <div class="flex space-x-4">
-                    <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed" title="Work in Progress">
-                        <i data-feather="play" class="w-5 h-5 mr-2"></i> Play Now (Coming Soon)
+                    <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed relative group" title="Work in Progress">
+                        <i data-feather="play" class="w-5 h-5 mr-2"></i> Play Now
+                        <span class="absolute -top-2 -right-2 bg-gray-700 text-xs text-white px-2 py-1 rounded-full">Coming Soon</span>
                     </a>
-                    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed" title="Work in Progress">
-                        <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code (Coming Soon)
+                    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed relative group" title="Work in Progress">
+                        <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code
+                        <span class="absolute -top-2 -right-2 bg-gray-700 text-xs text-white px-2 py-1 rounded-full">Coming Soon</span>
                     </a>
                 </div>
             </div>
@@ -104,16 +110,29 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+   <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0 w-full text-center md:text-left">
-                    <a href="index.html" class="flex items-center justify-center md:justify-start">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <a href="../index.html" class="flex items-center justify-center md:justify-start">
                         <i data-feather="cpu" class="h-8 w-8 text-indigo-400"></i>
                         <span class="font-semibold text-xl ml-2">MD Dilshad</span>
                     </a>
                     <p class="mt-2 text-gray-400">Creating amazing gaming experiences</p>
                 </div>
+                
+                <div class="flex space-x-6 justify-center md:justify-start">
+                    <a href="https://github.com/Dilshad716" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
+                        <i data-feather="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mddilshad715" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
+                        <i data-feather="linkedin" class="h-6 w-6"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2023 MD Dilshad. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -121,6 +140,32 @@
     <script>
         AOS.init();
         feather.replace();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'hidden mobile-menu md:hidden bg-white w-full absolute left-0 top-16 shadow-lg';
+        mobileMenu.innerHTML = `
+            <div class="flex flex-col space-y-2 px-4 py-3">
+                <a href="../index.html#home" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Home</a>
+                <a href="../index.html#projects" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Projects</a>
+                <a href="../index.html#skills" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Skills</a>
+                <a href="../index.html#about" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">About</a>
+                <a href="../index.html#contact" class="text-gray-700 hover:text-indigo-600 transition duration-300 py-2">Contact</a>
+            </div>
+        `;
+        document.querySelector('nav').appendChild(mobileMenu);
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                feather.replace();
+            } else {
+                icon.setAttribute('data-feather', 'x');
+                feather.replace();
+            }
+        });
     </script>
 </body>
 </html>
