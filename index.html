@@ -10,6 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
         .hero-gradient {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
@@ -25,7 +29,7 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans overflow-x-hidden">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full z-10">
         <div class="max-w-6xl mx-auto px-4">
@@ -374,15 +378,15 @@
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <a href="#" class="flex items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <a href="#" class="flex items-center justify-center md:justify-start">
                         <i data-feather="cpu" class="h-8 w-8 text-indigo-400"></i>
                         <span class="font-semibold text-xl ml-2">MD Dilshad</span>
                     </a>
                     <p class="mt-2 text-gray-400">Creating amazing gaming experiences</p>
                 </div>
                 
-                <div class="flex space-x-6">
+                <div class="flex space-x-6 justify-center md:justify-start">
                     <a href="https://github.com/Dilshad716" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-300">
                         <i data-feather="github" class="h-6 w-6"></i>
                     </a>
