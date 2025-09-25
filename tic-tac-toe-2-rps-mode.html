@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Revenge - Project Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex justify-center w-full md:w-auto md:space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center justify-center py-4 px-2">
+                            <i data-feather="cpu" class="h-8 w-8 text-indigo-600"></i>
+                            <span class="font-semibold text-gray-900 text-lg ml-2">MD Dilshad</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html#home" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Home</a>
+                    <a href="index.html#projects" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Projects</a>
+                    <a href="index.html#skills" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Skills</a>
+                    <a href="index.html#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">About</a>
+                    <a href="index.html#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-indigo-600 transition duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="hero-gradient text-white pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Tic Tac Toe 2 RPS Mode</h1>
+                <p class="text-xl mb-8">A strategic Tic Tac Toe mode with a Rock-Paper-Scissors twist!</p>
+                <div class="flex space-x-4">
+                    <a href="https://dilshad715.itch.io/tic-tac-toe-2" target="_blank" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition duration-300 flex items-center">
+                        <i data-feather="play" class="w-5 h-5 mr-2"></i> Play Now
+                    </a>
+                    <a href="https://github.com/Dilshad716/tic-toe-V1.4-RPS" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition duration-300 flex items-center">
+                        <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
+                    <div class="prose max-w-none text-gray-600">
+                        <p class="mb-4">
+                            Tic Tac Toe 2 RPS Mode is a strategic twist on classic Tic-Tac-Toe featuring Rock-Paper-Scissors counters and timing. In this version, both teams have a limited set of Rock, Paper, and Scissors moves.
+                        </p>
+                        <p class="mb-4">
+                            You can capture enemy tiles by playing a move that beats theirs - Paper beats Rock, Scissors beats Paper, and so on. Outsmart your opponent with perfect timing and clever counters!
+                        </p>
+                        <h3 class="text-xl font-semibold mt-6 mb-3">Key Features</h3>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Rock-Paper-Scissors mechanics</li>
+                            <li>Strategic tile capturing</li>
+                            <li>Limited move sets</li>
+                            <li>Timing-based gameplay</li>
+                            <li>Classic Tic Tac Toe rules</li>
+                            <li>Counter-based strategy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                        <iframe class="w-full h-96" src="https://www.youtube.com/embed/B2mgcxp8aUc?autoplay=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-4">Technologies Used</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Unity</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">C#</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Game Logic</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">UI/UX</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Strategy Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 w-full text-center md:text-left">
+                    <a href="index.html" class="flex items-center justify-center md:justify-start">
+                        <i data-feather="cpu" class="h-8 w-8 text-indigo-400"></i>
+                        <span class="font-semibold text-xl ml-2">MD Dilshad</span>
+                    </a>
+                    <p class="mt-2 text-gray-400">Creating amazing gaming experiences</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
