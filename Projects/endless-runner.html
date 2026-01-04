@@ -47,16 +47,15 @@
     <section class="hero-gradient text-white pt-32 pb-20 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col items-center text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Endless Runner</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Mountain Bicycle</h1>
                 <p class="text-xl mb-8">A Unity endless runner with dynamic 3D paths and multiple turn types.</p>
                 <div class="flex space-x-4">
-                    <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed relative group" title="Work in Progress">
+                    <a href="https://dilshad715.itch.io/mountain-bicycle" class="bg-indigo-600 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed relative group" title="Work in Progress">
                         <i data-feather="play" class="w-5 h-5 mr-2"></i> Play Now
                         <span class="absolute -top-2 -right-2 bg-gray-700 text-xs text-white px-2 py-1 rounded-full">Coming Soon</span>
                     </a>
-                    <a href="#" class="bg-gray-800 text-white px-6 py-3 rounded-md flex items-center opacity-75 cursor-not-allowed relative group" title="Work in Progress">
+                    <a href="https://github.com/Dilshad716/Mountain-Bicycle" target="_blank" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-900 transition duration-300 flex items-center">
                         <i data-feather="github" class="w-5 h-5 mr-2"></i> View Code
-                        <span class="absolute -top-2 -right-2 bg-gray-700 text-xs text-white px-2 py-1 rounded-full">Coming Soon</span>
                     </a>
                 </div>
             </div>
@@ -71,35 +70,42 @@
                     <h2 class="text-3xl font-bold mb-6">Project Overview</h2>
                     <div class="prose max-w-none text-gray-600">
                         <p class="mb-4">
-                            Endless Runner is an exciting 3D endless runner game built in Unity with dynamically generated paths and multiple turn types. The game features smooth controls, increasing difficulty, and multiple obstacles to avoid.
+                            This endless runner game delivers classic features like regenerating levels and obstacles, but it's elevated by all my recent learnings. OOP makes adding new levels, obstacles, and power-ups easy, while Scriptable Objects separate data from logic. I used design patterns like Singleton and Observer pattern.
                         </p>
                         <p class="mb-4">
-                            Players navigate through procedurally generated paths with left/right turns, jumps, and slides while collecting power-ups and avoiding obstacles. The game speed gradually increases to challenge players' reflexes and timing.
+                            The environment has a curved shader for a unique feel, and animations are optimized with DOTween. The player movement uses a Blend Tree for smooth transitions. Mobile touch controls let players swipe intuitively. Plus, it's fully optimized with SRP, batching, GPU instancing, and a production-ready object pool. In short, it's production-ready and polished!
                         </p>
                         <h3 class="text-xl font-semibold mt-6 mb-3">Key Features</h3>
                         <ul class="list-disc pl-5 mb-4">
-                            <li>Dynamic 3D path generation</li>
-                            <li>Multiple turn types (left/right/jump/slide)</li>
-                            <li>Progressive difficulty system</li>
-                            <li>Power-ups and collectibles</li>
-                            <li>High score tracking</li>
                             <li>Mobile-friendly controls</li>
+                            <li>Scriptable Object-driven architecture to separate game data from gameplay logic</li>
+                            <li>Event-based system for decoupled communication and gameplay event triggering</li>
+                            <li>Singleton managers (GameManager, SoundManager, etc.) for centralized game control</li>
+                            <li>High-performance object pooling system for endless environment spawning</li>
+                            <li>Mobile-optimized rendering using Universal Render Pipeline (URP)</li>
+                            <li>SRP Batcher-friendly materials and shaders to minimize draw calls</li>
+                            <li>Custom Shader Graph shaders for stylized visuals and curved world effect</li>
+                            <li>Smooth gameplay flow using tween-based animations</li>
+                            <li>Clean OOP-based code architecture following scalable design patterns</li>
+                            <li>Efficient endless level regeneration with optimized memory management</li>
+                            <li>GitHub for version control and collaboration.</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
-                        <iframe class="w-full h-96" src="https://www.youtube.com/embed/aEYJbRHTo30?autoplay=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="w-full h-96" src="https://www.youtube.com/embed/bGYycZSP-ss?autoplay=0&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="mt-6">
                         <h3 class="text-xl font-semibold mb-4">Technologies Used</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Unity</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Unity URP</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Shader Graph</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">DOTween</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Object Pooling</span>
                             <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">C#</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Procedural Generation</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">3D Gameplay</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Mobile Optimization</span>
-                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Mobile Input System</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Unity Frame Debugger</span>
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">GitHub</span>
                         </div>
                     </div>
                 </div>
