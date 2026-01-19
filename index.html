@@ -484,6 +484,25 @@
         box-shadow: 0 10px 20px rgba(108, 99, 255, 0.2);
       }
 
+      .btn-disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+        filter: grayscale(30%);
+      }
+
+      .badge{
+        background: var(--gray);
+        color: var(--light);
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        margin-left: 10px;
+        vertical-align: middle;
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+      }
+
       /* Experience Section - MODIFIED: Grid layout */
       .experience-grid {
         display: grid;
@@ -1279,9 +1298,7 @@
                 </div>
               </div>
 
-              <a
-                href="CV/CV.pdf"
-                class="btn btn-primary download-btn"
+              <a href="CV/CV.pdf" class="btn btn-primary download-btn"
                 ><i class="fas fa-download"></i> Download CV</a
               >
 
@@ -1306,10 +1323,7 @@
           </div>
           <div class="profile-image fade-in">
             <div class="profile-bg"></div>
-            <img
-              src="Images/Dilshad.jpg"
-              alt="Profile Picture"
-            />
+            <img src="Images/Dilshad.jpg" alt="Profile Picture" />
           </div>
         </div>
       </div>
@@ -1519,13 +1533,17 @@
                 </div>
                 <div class="project-buttons">
                   <span>
-                    <a href="#" class="btn btn-primary"
-                      ><i class="fas fa-play"></i> Play Demo</a
+                    <a href="#" class="btn btn-primary btn-disabled"
+                      ><i class="fas fa-play"></i> Play Demo
+                      <span class="badge">Work in Progress</span>
+                      </a
                     >
                   </span>
                   <span>
-                    <a href="#" class="btn btn-outline"
-                      ><i class="fab fa-github"></i> View Code</a
+                    <a href="#" class="btn btn-outline btn-disabled"
+                      ><i class="fab fa-github"></i> View Code
+                      <span class="badge">Work in Progress</span>
+                      </a
                     >
                   </span>
                 </div>
@@ -1696,13 +1714,17 @@
                 </div>
                 <div class="project-buttons">
                   <span>
-                    <a href="#" class="btn btn-primary"
-                      ><i class="fas fa-play"></i> Play Demo</a
+                    <a href="#" class="btn btn-primary btn-disabled"
+                      ><i class="fas fa-play"></i> Play Demo
+                      <span class="badge">Work in Progress</span>
+                      </a
                     >
                   </span>
                   <span>
-                    <a href="# " class="btn btn-outline"
-                      ><i class="fab fa-github"></i> View Code</a
+                    <a href="# " class="btn btn-outline btn-disabled"
+                      ><i class="fab fa-github"></i> View Code
+                      <span class="badge">Work in Progress</span>
+                      </a
                     >
                   </span>
                 </div>
@@ -2350,15 +2372,12 @@
 
         // Set image based on certification ID
         if (certId === "cert1") {
-          modalImage.src =
-            "Certifications/GameLoom-Interactive-Game-Dev.jpg";
-          modalCaption.textContent =
-            "Game Development Internship";
+          modalImage.src = "Certifications/GameLoom-Interactive-Game-Dev.jpg";
+          modalCaption.textContent = "Game Development Internship";
         } else if (certId === "cert2") {
           modalImage.src =
             "Certifications/foundational-c-sharp-with-microsoft.png";
-          modalCaption.textContent =
-            "Foundational C# with Microsoft";
+          modalCaption.textContent = "Foundational C# with Microsoft";
         } else if (certId === "cert3") {
           modalImage.src =
             "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80";
